@@ -17,7 +17,6 @@ class App extends Component {
     );
   }
 }
-export default App;
 
 class Point {
   constructor(x, y) {
@@ -29,3 +28,5 @@ class Point {
   }
 }
 global.Point = Point
+
+export default App;
