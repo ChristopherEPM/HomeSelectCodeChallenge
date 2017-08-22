@@ -1,11 +1,11 @@
 ## PART 1 (class Point)
-``
-- <https://github.com/ChristopherEPM/HomeSelectCodeChallenge/blob/master/src/App.js>
-- <https://github.com/ChristopherEPM/HomeSelectCodeChallenge/blob/master/src/App.test.js>
-``
+`
+- [Class](https://github.com/ChristopherEPM/HomeSelectCodeChallenge/blob/master/src/App.js)
+- [test](https://github.com/ChristopherEPM/HomeSelectCodeChallenge/blob/master/src/App.test.js)
+`
 
 ## Part 2 (github Api)
 `
-- <https://github.com/ChristopherEPM/HomeSelectCodeChallenge/blob/master/src/App.js>
-- <https://github.com/ChristopherEPM/HomeSelectCodeChallenge/tree/master/src/services>
+- [UI and actions](https://github.com/ChristopherEPM/HomeSelectCodeChallenge/blob/master/src/App.js)
+- [Api Calls](https://github.com/ChristopherEPM/HomeSelectCodeChallenge/tree/master/src/services)
 `
