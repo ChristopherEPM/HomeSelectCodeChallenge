@@ -21,6 +21,7 @@
   height: 50px;
   width: 50px;
   border-radius: 25px;
+  margin: 2%;
 }
 .User-container{
   width: 26%;
@@ -39,17 +40,58 @@
   max-height: 200px;
   border: 1px solid;
   overflow: auto;
+  margin-bottom: 2%;
 }
-.Search-wrapper{
+.searchs-wrapper {
   display: flex;
   width: 100%;
   padding: 1%;
   margin: 1%;
 }
-.Result-wrapper{
+.inputs-wrapper{
+  width: 20%;
+  align-items: center;
   display: flex;
-  justify-content: space-around;
+}
+
+.result-wrapper{
+  display: flex;
+  justify-content: flex-start;
   cursor: pointer;
+  width: 40%;
+  align-items: center;
+}
+.btn-delete{
+  color: #FFF;
+  background-color: #d23b0b;
+  margin: 2%;
+  border-radius: 20px;
+  border: 2px solid #943b1f;
+}
+.user-profile{
+  display: flex;
+  width: 100%;
+  padding: 2%;
+}
+.user-data{
+  width:80%;
+}
+
+.profile-avatar{
+  border: 1px solid;
+  width: 100px;
+  height: 100px;
+  margin:2%;
+}
+.section-name{
+  display: inline-block;
+  width: 100%;
+}
+.line-block{
+  display: flex;
+  padding: 1%;
+  margin: 2%;
+  width:100%;
 }
 
 @keyframes App-logo-spin {
