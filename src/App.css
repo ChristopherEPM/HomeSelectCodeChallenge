@@ -17,6 +17,38 @@
 .App-intro {
   font-size: large;
 }
+.Avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+.User-container{
+  width: 26%;
+  padding: 20px;
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.List-wrapper{
+  display: flex;
+  width: 100%;
+  flex-wrap:wrap;
+  max-height: 200px;
+  border: 1px solid;
+  overflow: auto;
+}
+.Search-wrapper{
+  display: flex;
+  width: 100%;
+  padding: 1%;
+  margin: 1%;
+}
+.Result-wrapper{
+  display: flex;
+  justify-content: space-around;
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
