@@ -29,6 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .List-wrapper{
@@ -48,6 +49,7 @@
 .Result-wrapper{
   display: flex;
   justify-content: space-around;
+  cursor: pointer;
 }
 
 @keyframes App-logo-spin {

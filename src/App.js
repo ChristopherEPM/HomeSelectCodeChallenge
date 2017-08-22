@@ -7,6 +7,8 @@ class App extends Component {
   state = {
     users: [],
     user:{},
+    selected_user: {},
+    show_profile: false,
   }
 
   async componentDidMount(){
@@ -24,9 +26,12 @@ class App extends Component {
       this.setState({ user })
     }
   }
+  onClickUser = user => () => {
+    this.setState({ selected_user: user, show_profile: true })
+  }
 
   render() {
-    const { users, user } = this.state
+    const { users, user, selected_user, show_profile } = this.state
     return (
       <div className="App">
         <div className="App-header">
@@ -39,22 +44,26 @@ class App extends Component {
         <div className="Search-wrapper">
           <input
             type="text"
-            placeholder="Buscar perfil"
+            placeholder="Search Github Profile"
             onChange={this.onSearchUser}
           />
           { user.avatar_url  &&
-              <div className="Result-wrapper">
+              <div className="Result-wrapper"
+                onClick={this.onClickUser(user)}
+              >
                 <img className="Avatar" src={user.avatar_url} />
                 <span>{user.login}</span>
               </div>
 
           }
         </div>
-        <div className="List-wrapper">
-          { users.map(user => (
-            <UserCard key={user.avatar_url} user={user} />
-          ))}
-        </div>
+        { !show_profile &&
+          <div className="List-wrapper">
+            { users.map(user => (
+              <UserCard key={user.avatar_url} user={user} onClickUser={this.onClickUser(user)} />
+            ))}
+          </div>
+        }
       </div>
     );
   }
@@ -73,8 +82,10 @@ global.Point = Point
 
 export default App;
 
-const UserCard = ({ user }) => (
-  <div className="User-container">
+const UserCard = ({ user, onClickUser }) => (
+  <div className="User-container"
+  onClick={onClickUser}
+  >
     <span>{user.login}</span>
     <img className="Avatar" src={user.avatar_url} />
   </div>
